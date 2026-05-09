@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email System</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        input, textarea{
+            width: 300px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        button{
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Enviar Email</h1>
+
+    <form method="POST">
+
+        <input type="email" name="to" placeholder="Destinatário" required>
+        <br>
+
+        <input type="text" name="subject" placeholder="Assunto" required>
+        <br>
+
+        <textarea name="body" placeholder="Mensagem"></textarea>
+        <br>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+    <p>{{ message }}</p>
+
+</body>
+</html>
